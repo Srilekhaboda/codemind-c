@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,r,sum=0;
+    int n,sum=0,r;
     scanf("%d",&n);
     while(n>>0)
     {
@@ -9,5 +9,5 @@ int main()
         sum=sum*10+r;
         n=n/10;
     }
-    printf("%d",sum);
+    printf("%d ",sum);
 }
