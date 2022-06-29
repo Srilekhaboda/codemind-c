@@ -14,8 +14,8 @@ int main()
     {
         if(arr[i]>1)
         {
-           printf("Not Unique Number");
-           break;
+            printf("Not Unique Number");
+            break;
         }
     }
     if(i==10)
