@@ -12,7 +12,8 @@ int isprime(int n)
     if(p==2)
     {
         return 1;
-    }return 0;
+    }
+    return 0;
 }
 int main()
 {
@@ -24,7 +25,7 @@ int main()
         k=isprime(p+i);
         if(k==1)
         {
-            printf("%d",i);
+            printf("%d ",i);
             break;
         }
     }
