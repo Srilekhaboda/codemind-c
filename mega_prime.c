@@ -20,27 +20,27 @@ int main()
     {
         while(n!=0)
         {
-           rem=n%10;
-           n=n/10;
-           if(rem!=0)
-           {
-               for(i=1;i<=rem;i++)
-               {
-                   if(rem%i==0)
-                   {
-                       fc++;
-                   }
-               }
-               if(fc==2)
-               {
-                   k=1;
-               }
-               else
-               {
-                   k=0;
-               }
-               fc=0;
-           }
+            rem=n%10;
+            n=n/10;
+            if(rem!=0)
+            {
+                for(i=1;i<=rem;i++)
+                {
+                    if(rem%i==0)
+                    {
+                        fc++;
+                    }
+                }
+                if(fc==2)
+                {
+                    k=1;
+                }
+                else
+                {
+                    k=0;
+                }
+                fc=0;
+            }
         }
         if(k==1)
         {
@@ -50,10 +50,9 @@ int main()
         {
             printf("Not Mega Prime");
         }
-    }    
-        else
-        {
-            printf("Not Mega Prime");
-        }
-    
+    }
+    else
+    {
+        printf("Not Mega Prime");
+    }
 }
