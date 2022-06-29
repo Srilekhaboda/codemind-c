@@ -34,5 +34,5 @@ int main()
         }
     }
     h=non_prime(arr,p);
-    printf("%d",h);
+    printf("%d ",h);
 }
