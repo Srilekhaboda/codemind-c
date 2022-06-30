@@ -1,20 +1,25 @@
 #include<stdio.h>
-#include<math.h>
+int minimum(int *arr,int n)
+{
+    int i,min=arr[0],k;
+    for(i=0;i<n;i++)
+    {
+        if(min>arr[i])
+        {
+            min=arr[i];
+        }
+    }
+    k=min;
+    return k;
+}
 int main()
 {
-    int arr[100],n,i,min;
+    int n,i,arr[100],k;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
     }
-    min=arr[0];
-    for(i=0;i<n;i++)
-   {
-       if(min>arr[i])
-       {
-           min=arr[i];
-       }
-   }
-   printf("%d",min);
+    k=minimum(arr,n);
+    printf("%d",k);
 }
